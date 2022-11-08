@@ -46,7 +46,8 @@ public class StudentService {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         LocalDate dob = LocalDate.parse(dobInString, formatter);
 
-        return studentDao.save(StudentBuilder.builder().id(++idCounter)
+        return studentDao.save(StudentBuilder.builder()
+                .id(++idCounter)
                 .firstName(firstName)
                 .lastName(lastName)
                 .email(email)

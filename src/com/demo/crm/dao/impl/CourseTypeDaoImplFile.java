@@ -50,7 +50,7 @@ public class CourseTypeDaoImplFile implements CourseTypeDao {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
-        return null;
+        return courseType;
     }
 
     @Override

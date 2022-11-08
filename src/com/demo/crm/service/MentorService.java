@@ -49,8 +49,7 @@ public class MentorService {
         System.out.print("Salary: ");
         Double salary = Double.parseDouble(scanner.nextLine());
 
-        return mentorDao.save(MentorBuilder
-                .builder()
+        return mentorDao.save(MentorBuilder.builder()
                 .id(++idCounter)
                 .firstName(firstName)
                 .lastName(lastName)
